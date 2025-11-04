@@ -23,6 +23,19 @@
      <!-- option three 3333 -->
       <button id="pTag" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis blanditiis error, voluptas ipsum nemo, suscipit corporis perferendis praesentium, eligendi optio architecto delectus laboriosam fuga est totam accusantium ut. Architecto?</button>
       <button id="make-btn-purple">make purple</button>
+      <br><br>
+      <button id="btn-make-black">make black</button>
+      <button id = 'make-btn-sky'>make sky</button>
+
+      <script>
+        document.getElementById('btn-make-black').addEventListener('click', function makeBlack(){
+            document.body.style.backgroundColor = 'black';
+            const big = document.getElementById('big');
+            big.style.color = 'white';
+            big.style.textAlign = 'center'
+        })
+      </script>
     <script src="./js/first.js"></script>
+
 </body>
 </html>

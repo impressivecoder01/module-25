@@ -28,3 +28,7 @@ function makePurple(){
 }
 const purple = document.getElementById('make-btn-purple')
 purple.onclick = makePurple;
+
+document.getElementById('make-btn-sky').addEventListener('click', function makeSky(){
+    document.body.style.backgroundColor = 'skyBlue'
+})
