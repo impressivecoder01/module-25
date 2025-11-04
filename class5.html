@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a comment box and display comment</title>
+    <style>
+        .comment{
+            border: 3px solid blue;
+            background-color:  lightblue;
+            padding: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My first dynamic comment box </h1>
+    <section>
+        <h2>All comments here</h2>
+        <div id="comment-container">
+            <p class="comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, asperiores.</p>
+            <p class="comment">Totam repellendus nobis dolores placeat consequatur? Voluptatem ipsam placeat veniam!</p>
+            <p class="comment">Cupiditate voluptates repellat reiciendis ducimus perspiciatis nemo tempora eum quaerat.</p>
+        </div>
+    </section>
+    <!-- <form> -->
+        <textarea name="" id="comment-box-textarea" cols="30" rows="5"></textarea><br><br>
+        <button id="post-comment-btn">post comment</button>
+    <!-- </form> -->
+
+
+    <script>
+        document.getElementById('post-comment-btn').addEventListener('click', function(){
+            const commentBox = document.getElementById('comment-box-textarea');
+            const reserve = commentBox.value;
+            // console.log(reserve)
+            const commentContainer = document.getElementById('comment-container');
+            // console.log(commentContainer)
+            const commentElement = document.createElement('p');
+            commentElement.innerText = reserve;
+            commentContainer.appendChild(commentElement).classList.add('comment')
+        })
+    </script>
+    <script src="./js/five.js"></script>
+</body>
+</html>
