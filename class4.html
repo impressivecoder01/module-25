@@ -11,6 +11,22 @@
     <p id="user">No user</p>
     <button id="btn-login">Login</button>
 
+    <!-- handle input text -->
+     <br><br><br>
+     <p id="save-name">No Name</p>
+     <input placeholder="Your Name Please" type="text" name="" id="name-input">
+     <br><br>
+     <button id="update-btn">Update</button>
+
+     <script>
+        document.getElementById('update-btn').addEventListener('click', function(){
+            const nameInput = document.getElementById('name-input')
+            const name = nameInput.value;
+            // console.log(name)
+            const saveName = document.getElementById('save-name');
+            saveName.innerText = name;
+        })
+     </script>
     <script src="./js/four.js"></script>
 </body>
 </html>
