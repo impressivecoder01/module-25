@@ -18,3 +18,7 @@ console.log('comment box')
 //             create.innerText = collectComment;
 //             findComment.appendChild(create)
 //         })
+
+// document.getElementById('mouse-btn').addEventListener('mouseenter', function(){
+//             console.log('mouse enter')
+//         })
