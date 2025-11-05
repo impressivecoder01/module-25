@@ -10,3 +10,11 @@ console.log('comment box')
 //             commentContainer.appendChild(commentElement).classList.add('comment')
 //             commentBox.value = '';
 //         })
+// document.getElementById('comment-btn').addEventListener('click', function(){
+//             const findComment = document.getElementById('collect-text');
+//             const collectComment = findComment.value;
+//             const findSection = document.getElementById('second-comment');
+//             const create = document.createElement('p');
+//             create.innerText = collectComment;
+//             findComment.appendChild(create)
+//         })

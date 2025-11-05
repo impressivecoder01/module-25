@@ -28,10 +28,16 @@
         <textarea name="" id="comment-box-textarea" cols="30" rows="5"></textarea><br><br>
         <button id="post-comment-btn">post comment</button>
     <!-- </form> -->
-
+     <!-- practice -->
+    <section id="second-comment">
+        <p id="first-comment">first comment</p>
+        <textarea name="" id="collect-text"></textarea><br><br>
+        <button id="comment-btn">comment</button>
+    </section>
 
     <script>
-        document.getElementById('post-comment-btn').addEventListener('click', function(){
+        document.getElementById('post-comment-btn').addEventListener
+        ('click', function(){
             const commentBox = document.getElementById('comment-box-textarea');
             const reserve = commentBox.value;
             // console.log(reserve)
@@ -42,7 +48,21 @@
             commentContainer.appendChild(commentElement).classList.add('comment')
             commentBox.value = '';
         })
+
+        document.getElementById('first-comment').classList.add('comment')
+        document.getElementById('comment-btn').addEventListener('click', function(){
+            const findComment = document.getElementById('collect-text');
+            const collectComment = findComment.value;
+            console.log(collectComment)
+            const findSection = document.getElementById('second-comment');
+            const create = document.createElement('p');
+            console.log(create)
+            create.innerText = collectComment;
+            findSection.appendChild(create).classList.add('comment')
+            findComment.value = ''
+        })
     </script>
+
     <script src="./js/five.js"></script>
 </body>
 </html>
